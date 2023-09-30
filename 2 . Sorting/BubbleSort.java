@@ -44,3 +44,32 @@ public class BubbleSort {
         System.out.println();
     }
 }
+
+
+/* Here's an explanation of the key parts of the program:
+
+bubbleSort method:
+
+The bubbleSort method takes an integer array arr as its input and sorts it in-place using the Bubble Sort algorithm.
+It starts by initializing a variable n with the length of the input array arr.
+It also initializes a boolean variable swapped to keep track of whether any swaps were made in the current pass through the array.
+Outer Loop:
+
+The outer loop iterates from i = 0 to i < n - 1. This loop represents the number of passes through the array.
+Inner Loop:
+
+The inner loop, nested within the outer loop, iterates from j = 0 to j < n - i - 1. It compares adjacent elements of the array and swaps them if they are in the wrong order (i.e., if arr[j] > arr[j + 1]).
+If a swap is made during this inner loop, the swapped variable is set to true.
+Check for Early Termination:
+
+After each pass through the array, the program checks the swapped variable. If no swaps were made in the inner loop (i.e., swapped is still false), it means the array is already sorted, and the outer loop can be terminated early using the break statement.
+main method:
+
+In the main method, an example integer array arr is created with unsorted values.
+The original array is printed using the printArray method.
+The bubbleSort method is called to sort the array.
+Finally, the sorted array is printed again using the printArray method to show the result.
+printArray method:
+
+The printArray method takes an integer array arr as input and prints its elements on a single line, separated by spaces.
+When you run the program, it will output the original array, perform the Bubble Sort algorithm on it, and then display the sorted array as the final result. */
