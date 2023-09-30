@@ -62,3 +62,38 @@ public class BFS {
         g.BFS(0);
     }
 }
+/*
+The provided Java program implements the Breadth-First Search (BFS) algorithm for traversing a graph starting from a specified vertex. Here's a description of the program:
+
+Graph Class:
+
+This class represents a graph using an adjacency list data structure.
+It has private instance variables:
+V: The number of vertices in the graph.
+adj: An array of lists, where each list represents the adjacency list of a vertex.
+The constructor Graph(int v) initializes the graph with a specified number of vertices v. It creates an array of ArrayList objects to store adjacency lists for each vertex.
+addEdge Method:
+
+This method allows you to add an edge between two vertices in the graph.
+It takes two parameters: v and w, which represent the vertices to be connected by an edge.
+It adds w to the adjacency list of vertex v, effectively creating an edge between v and w.
+BFS Method:
+
+The BFS method performs a Breadth-First Search traversal starting from a given vertex v.
+It uses a boolean array visited to keep track of visited vertices.
+It utilizes a Queue (implemented as a LinkedList) to maintain the order of traversal.
+It starts by marking the initial vertex v as visited and enqueues it.
+Then, it enters a loop that continues as long as the queue is not empty.
+Inside the loop, it dequeues a vertex, prints it, and explores its adjacent vertices.
+For each adjacent vertex that has not been visited, it marks it as visited and enqueues it.
+The loop continues until all reachable vertices have been visited.
+main Method:
+
+The main method is the entry point of the program.
+It creates an instance of the Graph class with 7 vertices.
+It adds edges to the graph to create a sample graph structure.
+It then calls the BFS method to perform a BFS traversal starting from vertex 0.
+The BFS traversal result is printed to the console.
+Overall, this program demonstrates how to use the BFS algorithm to traverse a graph. In the provided example, it creates a graph with 7 vertices and performs a BFS traversal starting from vertex 0, printing the traversal order to the console.
+    */
+
