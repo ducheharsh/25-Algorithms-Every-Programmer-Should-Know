@@ -40,3 +40,5 @@ public class SelectionSort {
         System.out.println();
     }
 }
+
+/*The selection sort algorithm is a simple comparison-based sorting technique. It divides the input array into two parts: the sorted and unsorted portions. In each iteration, it finds the minimum element from the unsorted part and swaps it with the first element in the unsorted portion. This process continues until the entire array is sorted. Selection sort has a time complexity of O(n^2) and is not very efficient for large datasets but is easy to understand and implement.*/
