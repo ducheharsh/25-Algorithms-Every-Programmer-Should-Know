@@ -66,35 +66,6 @@ public class BFS {
         g.BFS(0);
     }
 }
-/*Graph Class:
-
-The Graph class represents an undirected graph using an adjacency list representation.
-It has two instance variables:
-V: An integer representing the number of vertices in the graph.
-adj: An array of linked lists (LinkedList) where each element of the array represents a vertex, and the linked list at each element stores its adjacent vertices.
-The constructor Graph(int v) initializes the graph with the specified number of vertices (v) and initializes an empty adjacency list for each vertex.
-The addEdge(int v, int w) method allows adding an edge between vertices v and w by adding w to the adjacency list of v and vice versa (assuming an undirected graph).
-BFS(int v) Method:
-
-This method performs a Breadth-First Search traversal starting from the vertex v.
-It uses a boolean array visited to keep track of visited vertices to avoid revisiting them.
-It uses a LinkedList named queue to implement the BFS queue.
-It starts by marking the initial vertex v as visited and enqueuing it into the queue.
-It then enters a loop that continues until the queue is empty.
-Inside the loop, it dequeues a vertex, prints it, and explores its adjacent vertices:
-For each adjacent vertex (neighbor) that hasn't been visited yet, it marks it as visited and enqueues it into the queue.
-The BFS traversal prints the vertices in the order they are visited, which follows the breadth-first exploration of the graph.
-main Method:
-
-In the main method, an instance of the Graph class g is created with 7 vertices.
-Edges are added to the graph using the addEdge method to create a simple graph structure with 7 vertices and connections between them.
-Finally, a BFS traversal is initiated from vertex 0, and the result is printed to the console.
-The code demonstrates how to create a graph, add edges to it, and perform a BFS traversal starting from a specified vertex. In the provided example, the BFS traversal starts from vertex 0 and prints the visited vertices in BFS order.
-*/
-
-
-
-
 
 
 
